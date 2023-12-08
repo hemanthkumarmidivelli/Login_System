@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Profile page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
+    
+    <script src='main.js'>
+        
+    </script>
+</head>
+<body>
+    <script src="js/profile.js"></script>
+    <script src="../js/profile.js"></script>
+    <div class="container">
+        <div class="screen">
+            
+            <div class="screen__content">
+                <h3 style="color: rgb(43, 226, 156);">Profile page</h3>
+                <div class="login__field" style="position: absolute;">
+                        <p id="user"></p>
+                        <p id="em"></p>
+                        <p id="phn"></p>
+
+                    </div>
+                <form class="login" name="profile" action="../index.html" method="post" >
+                    
+                    <div class="login__field">
+                        
+                        Date of Birth
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="date" name="dob" id="dob" class="login__input" placeholder="Date of Birth ">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="number" name="altphn" class="login__input" placeholder="alternate phonenumber">
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <p id="para" ></p>
+                    </div>
+                    <button onclick="return ageCalculator()" class="button login__submit" id="cal"> Calculate age</button>
+                    
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">Save and continue</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>				
+                </form>
+                
+                
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+</body>
+</html>

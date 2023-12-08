@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Register</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script src="js/register.js"></script>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" name="register" onsubmit="return validateForm()" action="php/register.php" method="post">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" name="username" class="login__input" placeholder="User name " >
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="email" name="email" class="login__input" placeholder="Email" >
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="number" name="phonenumber" class="login__input" placeholder="Phone Number" >
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" name="password" class="login__input" placeholder="Password" >
+                    </div>
+                    <div class="button login__submit">
+                        <input type="submit" class="button__text" name="Register" value="Register                                             " style="border: 0cm;">
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </div>
+                    <!-- <button class="button login__submit">
+                        <span class="button__text">Register</span>
+                        
+                    </button>
+                -->				
+                </form>
+                
+                
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+</body>
+</html>
